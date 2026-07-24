@@ -1,24 +1,30 @@
 const cube = document.getElementById("cube");
 
+
 let rotation = 0;
 
 
 function animate(){
 
-rotation += 0.02;
+
+    rotation += 0.02;
 
 
-cube.style.transform = `
+    cube.style.transform = `
 
-translate(-50%, -50%)
+        translate(-50%, -50%)
 
-rotateY(${rotation}deg)
+        rotateX(-10deg)
 
-rotateX(-5deg)
+        rotateY(${rotation}deg)
 
-`;
+        scale(1.35)
 
-requestAnimationFrame(animate);
+    `;
+
+
+    requestAnimationFrame(animate);
+
 
 }
 
