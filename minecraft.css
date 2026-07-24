@@ -104,7 +104,7 @@ html, body {
     rotateX(90deg)
     translateZ(-1024px);
 
-    background-image:url("images/panorama/panorama_4.png");
+    background-image:url("images/panorama/panorama_5.png");
 
 }
 
@@ -115,6 +115,6 @@ html, body {
     rotateX(-90deg)
     translateZ(-1024px);
 
-    background-image:url("images/panorama/panorama_5.png");
+    background-image:url("images/panorama/panorama_4.png");
 
 }
