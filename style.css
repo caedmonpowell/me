@@ -1,57 +1,140 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #111;
-    color: white;
-    line-height: 1.6;
+body{
+
+    background:#111;
+    overflow:hidden;
+
+    color:white;
+
+    font-family:"Barlow Condensed",sans-serif;
 }
 
-header {
-    background: #1f1f1f;
-    text-align: center;
-    padding: 60px 20px;
+/* background */
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at top left,#ff0022 0%,transparent 40%),
+
+    linear-gradient(130deg,#111 55%,#191919 55%);
+
 }
 
-header h1 {
-    font-size: 3rem;
+/* menu */
+
+.menu{
+
+    position:absolute;
+
+    top:40px;
+    left:50px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
 }
 
-nav {
-    background: #222;
-    text-align: center;
-    padding: 15px;
+.menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    background:#111;
+
+    padding:8px 28px;
+
+    transform:skew(-18deg);
+
+    border-left:8px solid red;
+
+    transition:.2s;
+
+    box-shadow:8px 8px black;
+
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
+.menu a:hover{
+
+    background:red;
+
+    transform:translateX(20px) skew(-18deg);
+
 }
 
-nav a:hover {
-    color: #66ccff;
+/* title */
+
+.hero{
+
+    position:absolute;
+
+    right:120px;
+
+    top:120px;
+
+    text-align:right;
+
 }
 
-section {
-    max-width: 900px;
-    margin: auto;
-    padding: 60px 20px;
+.hero h1{
+
+    font-size:120px;
+
+    line-height:.9;
+
+    text-shadow:8px 8px black;
+
 }
 
-.card {
-    background: #1d1d1d;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
+.hero p{
+
+    margin-top:20px;
+
+    font-size:28px;
+
+    background:red;
+
+    display:inline-block;
+
+    padding:6px 20px;
+
+    transform:skew(-15deg);
+
 }
 
-footer {
-    text-align: center;
-    padding: 30px;
-    background: #1f1f1f;
+/* gif */
+
+.futaba{
+
+    position:absolute;
+
+    bottom:0;
+
+    right:80px;
+
+    width:350px;
+
+    image-rendering:auto;
+
+    filter:drop-shadow(10px 10px 0 black);
+
 }
