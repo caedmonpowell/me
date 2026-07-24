@@ -20,9 +20,9 @@ html, body {
     width:100vw;
     height:100vh;
 
-    overflow:hidden;
+    perspective:1000px;
 
-    perspective:1200px;
+    overflow:hidden;
 
 }
 
@@ -42,8 +42,6 @@ html, body {
 }
 
 
-/* Cube faces */
-
 .face {
 
     position:absolute;
@@ -53,23 +51,29 @@ html, body {
 
     background-size:cover;
 
-    background-position:center;
-
 }
 
 
-
-/* Correct Minecraft panorama order */
-
+/* panorama faces */
 
 .front {
 
     transform:translateZ(-1024px);
 
-    background-image:url("images/panorama/panorama_3.png");
+    background-image:url("images/panorama/panorama_0.png");
 
 }
 
+
+.right {
+
+    transform:
+    rotateY(90deg)
+    translateZ(-1024px);
+
+    background-image:url("images/panorama/panorama_1.png");
+
+}
 
 
 .back {
@@ -83,29 +87,15 @@ html, body {
 }
 
 
-
-.right {
-
-    transform:
-    rotateY(90deg)
-    translateZ(-1024px);
-
-    background-image:url("images/panorama/panorama_0.png");
-
-}
-
-
-
 .left {
 
     transform:
     rotateY(-90deg)
     translateZ(-1024px);
 
-    background-image:url("images/panorama/panorama_1.png");
+    background-image:url("images/panorama/panorama_3.png");
 
 }
-
 
 
 .top {
@@ -117,7 +107,6 @@ html, body {
     background-image:url("images/panorama/panorama_4.png");
 
 }
-
 
 
 .bottom {
