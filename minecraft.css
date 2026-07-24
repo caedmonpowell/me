@@ -15,107 +15,13 @@ html, body {
 
 #panorama {
 
-    position:fixed;
+    width:100vw;
+    height:100vh;
 
-    inset:0;
-
-    perspective:800px;
-
-    overflow:hidden;
-
-}
-
-
-#cube {
-
-    position:absolute;
-
-    left:50%;
-    top:50%;
-
-    width:2000px;
-    height:2000px;
-
-    transform-style:preserve-3d;
-
-}
-
-
-.face {
-
-    position:absolute;
-
-    width:2000px;
-    height:2000px;
+    background-image:url("images/panorama/panorama_0.png");
 
     background-size:cover;
 
     background-position:center;
-
-}
-
-
-/* Put camera inside cube */
-
-.front {
-
-    transform:translateZ(1000px);
-
-    background-image:url("images/panorama/panorama_0.png");
-
-}
-
-
-.back {
-
-    transform:
-    rotateY(180deg)
-    translateZ(1000px);
-
-    background-image:url("images/panorama/panorama_2.png");
-
-}
-
-
-.right {
-
-    transform:
-    rotateY(90deg)
-    translateZ(1000px);
-
-    background-image:url("images/panorama/panorama_1.png");
-
-}
-
-
-.left {
-
-    transform:
-    rotateY(-90deg)
-    translateZ(1000px);
-
-    background-image:url("images/panorama/panorama_3.png");
-
-}
-
-
-.top {
-
-    transform:
-    rotateX(90deg)
-    translateZ(1000px);
-
-    background-image:url("images/panorama/panorama_4.png");
-
-}
-
-
-.bottom {
-
-    transform:
-    rotateX(-90deg)
-    translateZ(1000px);
-
-    background-image:url("images/panorama/panorama_5.png");
 
 }
