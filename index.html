@@ -1,315 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Caedmon Powell</title>
+    <title>Minecraft Website</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-
-    overflow:hidden;
-    font-family:'Press Start 2P', monospace;
-    background:#000;
-
-}
-
-/* Panorama */
-
-#background{
-
-    position:fixed;
-    width:120%;
-    height:120%;
-
-    left:-10%;
-    top:-10%;
-
-    background:url("images/panorama.jpg") center center;
-    background-size:cover;
-
-    filter:blur(2px) brightness(.65);
-
-    animation:panorama 80s linear infinite alternate;
-
-}
-
-@keyframes panorama{
-
-0%{
-
-transform:translateX(-4%) scale(1.1);
-
-}
-
-100%{
-
-transform:translateX(4%) scale(1.15);
-
-}
-
-}
-
-/* Dark overlay */
-
-#overlay{
-
-position:fixed;
-inset:0;
-
-background:linear-gradient(
-rgba(0,0,0,.2),
-rgba(0,0,0,.55)
-);
-
-}
-
-/* Logo */
-
-.logo{
-
-position:absolute;
-
-top:60px;
-left:50%;
-
-transform:translateX(-50%);
-
-font-size:64px;
-
-color:white;
-
-text-shadow:
-
-4px 4px black,
-8px 8px rgba(0,0,0,.4);
-
-user-select:none;
-
-}
-
-/* Splash */
-
-.splash{
-
-position:absolute;
-
-left:58%;
-top:105px;
-
-font-size:18px;
-
-color:#ffff55;
-
-transform:rotate(-18deg);
-
-animation:bounce .7s infinite alternate;
-
-}
-
-@keyframes bounce{
-
-from{
-
-transform:rotate(-18deg) scale(1);
-
-}
-
-to{
-
-transform:rotate(-18deg) scale(1.1);
-
-}
-
-}
-
-/* Menu */
-
-.menu{
-
-position:absolute;
-
-left:50%;
-top:45%;
-
-transform:translate(-50%,-50%);
-
-display:flex;
-flex-direction:column;
-
-gap:14px;
-
-}
-
-/* Minecraft Button */
-
-button{
-
-width:420px;
-
-padding:16px;
-
-font-family:inherit;
-
-font-size:14px;
-
-background:
-
-linear-gradient(
-#8b8b8b,
-#5d5d5d
-);
-
-border:
-
-4px solid #222;
-
-outline:
-
-2px solid #999;
-
-color:white;
-
-cursor:pointer;
-
-text-shadow:2px 2px black;
-
-transition:.12s;
-
-}
-
-button:hover{
-
-background:
-
-linear-gradient(
-#9d9d9d,
-#777
-);
-
-transform:translateY(-2px);
-
-}
-
-button:active{
-
-transform:translateY(2px);
-
-}
-
-/* Footer */
-
-.footer{
-
-position:absolute;
-
-bottom:20px;
-left:20px;
-
-font-size:10px;
-
-color:#bbb;
-
-text-shadow:2px 2px black;
-
-}
-
-.version{
-
-position:absolute;
-
-bottom:20px;
-right:20px;
-
-font-size:10px;
-
-color:#bbb;
-
-text-shadow:2px 2px black;
-
-}
-
-</style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
-<div id="background"></div>
 
-<div id="overlay"></div>
+<div id="panorama">
 
-<div class="logo">
+    <div id="cube">
 
-MINECRAFT
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face right"></div>
+        <div class="face left"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
 
-</div>
-
-<div class="splash" id="splash">
-
-Hello World!
-
-</div>
-
-<div class="menu">
-
-<button>Singleplayer</button>
-
-<button>Multiplayer</button>
-
-<button>Projects</button>
-
-<button>Gallery</button>
-
-<button>Settings</button>
-
-<button>Quit Game</button>
+    </div>
 
 </div>
 
-<div class="footer">
 
-© Caedmon Powell
 
-</div>
+<script src="script.js"></script>
 
-<div class="version">
-
-GitHub
-
-</div>
-
-<script>
-
-const splashes=[
-
-"Hello World!",
-"Caedmon P!",
-"...",
-"test",
-"hmm",
-"Powered by GitHub!",
-"who are you?",
-"Welcome!"
-
-];
-
-document.getElementById("splash").innerText=
-splashes[Math.floor(Math.random()*splashes.length)];
-
-</script>
 
 </body>
 
