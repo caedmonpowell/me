@@ -5,16 +5,14 @@ let rotation = 0;
 
 function animate(){
 
-    rotation += 0.01;
+    rotation += 0.002;
 
 
     cube.style.transform = `
 
         translate(-50%, -50%)
 
-        rotateX(-10deg)
-
-        rotateY(${rotation}deg)
+        rotateY(${rotation}rad)
 
     `;
 
