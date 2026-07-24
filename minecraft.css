@@ -13,117 +13,15 @@ html, body {
 }
 
 
-/* Panorama container */
-
 #panorama {
-
-    position:fixed;
 
     width:100vw;
     height:100vh;
 
-    overflow:hidden;
-
-    perspective:1200px;
-
-}
-
-
-/* Panorama cube */
-
-#cube {
-
-    position:absolute;
-
-    left:50%;
-    top:50%;
-
-    width:2048px;
-    height:2048px;
-
-    transform-style:preserve-3d;
-
-}
-
-
-/* Individual cube faces */
-
-.face {
-
-    position:absolute;
-
-    width:2048px;
-    height:2048px;
+    background-image:url("images/panorama/panorama_0.png");
 
     background-size:cover;
 
     background-position:center;
-
-}
-
-
-/* Minecraft panorama images */
-
-
-.front {
-
-    transform:translateZ(-1024px);
-
-    background-image:url("images/panorama/panorama_0.png");
-
-}
-
-
-.right {
-
-    transform:
-    rotateY(90deg)
-    translateZ(-1024px);
-
-    background-image:url("images/panorama/panorama_1.png");
-
-}
-
-
-.back {
-
-    transform:
-    rotateY(180deg)
-    translateZ(-1024px);
-
-    background-image:url("images/panorama/panorama_2.png");
-
-}
-
-
-.left {
-
-    transform:
-    rotateY(-90deg)
-    translateZ(-1024px);
-
-    background-image:url("images/panorama/panorama_3.png");
-
-}
-
-
-.top {
-
-    transform:
-    rotateX(90deg)
-    translateZ(-1024px);
-
-    background-image:url("images/panorama/panorama_4.png");
-
-}
-
-
-.bottom {
-
-    transform:
-    rotateX(-90deg)
-    translateZ(-1024px);
-
-    background-image:url("images/panorama/panorama_5.png");
 
 }
