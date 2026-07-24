@@ -1,66 +1,10 @@
-html, body {
-
-    margin:0;
-    padding:0;
-
-    width:100%;
-    height:100%;
-
-    overflow:hidden;
-
-    background:black;
-
-}
-
-
-#panorama {
-
-    position:fixed;
-
-    width:100vw;
-    height:100vh;
-
-    perspective:1000px;
-
-    overflow:hidden;
-
-}
-
-
-#cube {
-
-    position:absolute;
-
-    left:50%;
-    top:50%;
-
-    width:2048px;
-    height:2048px;
-
-    transform-style:preserve-3d;
-
-}
-
-
-.face {
-
-    position:absolute;
-
-    width:2048px;
-    height:2048px;
-
-    background-size:cover;
-
-}
-
-
 /* panorama faces */
 
 .front {
 
     transform:translateZ(-1024px);
 
-    background-image:url("images/panorama/panorama_0.png");
+    background-image:url("images/panorama/panorama_1.png");
 
 }
 
@@ -71,7 +15,7 @@ html, body {
     rotateY(90deg)
     translateZ(-1024px);
 
-    background-image:url("images/panorama/panorama_1.png");
+    background-image:url("images/panorama/panorama_4.png");
 
 }
 
@@ -82,7 +26,7 @@ html, body {
     rotateY(180deg)
     translateZ(-1024px);
 
-    background-image:url("images/panorama/panorama_2.png");
+    background-image:url("images/panorama/panorama_3.png");
 
 }
 
@@ -93,7 +37,7 @@ html, body {
     rotateY(-90deg)
     translateZ(-1024px);
 
-    background-image:url("images/panorama/panorama_3.png");
+    background-image:url("images/panorama/panorama_5.png");
 
 }
 
@@ -104,7 +48,7 @@ html, body {
     rotateX(90deg)
     translateZ(-1024px);
 
-    background-image:url("images/panorama/panorama_4.png");
+    background-image:url("images/panorama/panorama_0.png");
 
 }
 
@@ -115,6 +59,6 @@ html, body {
     rotateX(-90deg)
     translateZ(-1024px);
 
-    background-image:url("images/panorama/panorama_5.png");
+    background-image:url("images/panorama/panorama_2.png");
 
 }
