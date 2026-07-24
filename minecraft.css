@@ -26,15 +26,8 @@ html, body {
 
 #cube {
 
-    position:absolute;
-
-    left:50%;
-    top:50%;
-
     width:2048px;
     height:2048px;
-
-    transform-style:preserve-3d;
 
 }
 
