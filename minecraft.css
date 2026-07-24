@@ -1,120 +1,123 @@
 html, body {
 
-    margin:0;
-    padding:0;
-
-    width:100%;
-    height:100%;
-
-    overflow:hidden;
-
-    background:black;
+margin:0;
+height:100%;
+overflow:hidden;
+background:black;
 
 }
 
 
-#panorama {
+#scene {
 
-    position:fixed;
+width:100vw;
+height:100vh;
 
-    width:100vw;
-    height:100vh;
+perspective:800px;
 
-    perspective:1000px;
-
-    overflow:hidden;
+overflow:hidden;
 
 }
 
 
 #cube {
 
-    position:absolute;
+position:absolute;
 
-    left:50%;
-    top:50%;
+left:50%;
+top:50%;
 
-    width:2048px;
-    height:2048px;
+width:1024px;
+height:1024px;
 
-    transform-style:preserve-3d;
+transform-style:preserve-3d;
 
 }
 
 
 .face {
 
-    position:absolute;
+position:absolute;
 
-    width:2048px;
-    height:2048px;
+width:1024px;
+height:1024px;
 
-    background-size:cover;
+background-size:100% 100%;
 
 }
 
 
-/* panorama faces */
+/* Front */
 
 .front {
 
-    transform:translateZ(-1024px);
+transform:translateZ(512px);
 
-    background-image:url("images/panorama/panorama_0.png");
+background-image:url("images/panorama/panorama_0.png");
 
 }
 
+
+/* Right */
 
 .right {
 
-    transform:
-    rotateY(90deg)
-    translateZ(-1024px);
+transform:
+rotateY(90deg)
+translateZ(512px);
 
-    background-image:url("images/panorama/panorama_1.png");
+background-image:url("images/panorama/panorama_1.png");
 
 }
 
+
+/* Back */
 
 .back {
 
-    transform:
-    rotateY(180deg)
-    translateZ(-1024px);
+transform:
+rotateY(180deg)
+translateZ(512px);
 
-    background-image:url("images/panorama/panorama_2.png");
+background-image:url("images/panorama/panorama_2.png");
 
 }
 
+
+/* Left */
 
 .left {
 
-    transform:
-    rotateY(-90deg)
-    translateZ(-1024px);
+transform:
+rotateY(-90deg)
+translateZ(512px);
 
-    background-image:url("images/panorama/panorama_3.png");
+background-image:url("images/panorama/panorama_3.png");
 
 }
 
+
+/* Top */
 
 .top {
 
-    transform:
-    rotateX(90deg)
-    translateZ(-1024px);
+transform:
+rotateX(90deg)
+translateZ(512px);
 
-    background-image:url("images/panorama/panorama_4.png");
+background-image:url("images/panorama/panorama_4.png");
 
 }
 
 
+/* Bottom */
+
 .bottom {
 
-    transform:
-    rotateX(-90deg)
-    translateZ(-1024px);
+transform:
+rotateX(-90deg)
+translateZ(512px);
 
-    background-image:url("images/panorama/panorama_5.png");
+background-image:url("images/panorama/panorama_5.png");
 
 }
