@@ -1,0 +1,187 @@
+/* ===========================
+   Minecraft-Inspired Theme
+   =========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+    --bg:#000;
+    --text:#ffffff;
+    --shadow:#000;
+    --button:#6f6f6f;
+    --button2:#5b5b5b;
+    --button-border-light:#9d9d9d;
+    --button-border-dark:#2a2a2a;
+    --button-hover:#7c7c7c;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+body{
+
+    font-family:"Press Start 2P", monospace;
+
+    color:var(--text);
+
+    background:
+        linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+        url("images/panorama.jpg") center center/cover no-repeat;
+
+    animation:panorama 80s linear infinite;
+}
+
+/* Slow moving panorama */
+
+@keyframes panorama{
+
+    0%{
+        background-position:0% center;
+    }
+
+    50%{
+        background-position:100% center;
+    }
+
+    100%{
+        background-position:0% center;
+    }
+
+}
+
+/* Main */
+
+main{
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* Logo */
+
+.logo{
+
+    font-size:64px;
+
+    text-shadow:
+        6px 6px #000,
+        3px 3px #555;
+
+    margin-bottom:70px;
+
+}
+
+/* Splash */
+
+.splash{
+
+    position:absolute;
+
+    top:140px;
+
+    right:17%;
+
+    color:#ffe600;
+
+    transform:rotate(-18deg);
+
+    animation:bounce 1s ease-in-out infinite;
+
+}
+
+@keyframes bounce{
+
+    50%{
+        transform:rotate(-18deg) scale(1.08);
+    }
+
+}
+
+/* Menu */
+
+.menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    width:420px;
+
+}
+
+/* Buttons */
+
+.menu button{
+
+    font-family:inherit;
+
+    font-size:14px;
+
+    color:white;
+
+    padding:18px;
+
+    cursor:pointer;
+
+    border-top:4px solid var(--button-border-light);
+    border-left:4px solid var(--button-border-light);
+
+    border-bottom:4px solid var(--button-border-dark);
+    border-right:4px solid var(--button-border-dark);
+
+    background:
+        linear-gradient(var(--button),var(--button2));
+
+    text-shadow:2px 2px black;
+
+    transition:.05s;
+
+}
+
+.menu button:hover{
+
+    background:
+        linear-gradient(var(--button-hover),#666);
+
+}
+
+.menu button:active{
+
+    transform:translateY(3px);
+
+}
+
+/* Footer */
+
+footer{
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:20px;
+
+    font-size:10px;
+
+    opacity:.7;
+
+}
