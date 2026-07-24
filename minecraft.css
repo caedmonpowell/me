@@ -20,7 +20,7 @@ html, body {
     width:100vw;
     height:100vh;
 
-    perspective:1000px;
+    perspective:1800px;
 
     overflow:hidden;
 
@@ -44,12 +44,16 @@ html, body {
 
 .face {
 
-    position:absolute;
+    position: absolute;
 
-    width:2048px;
-    height:2048px;
+    width: 2050px;
+    height: 2050px;
 
-    background-size:cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    backface-visibility: hidden;
+    image-rendering: pixelated;
 
 }
 
@@ -69,7 +73,7 @@ html, body {
 
     transform:
     rotateY(90deg)
-    translateZ(-1024px);
+    translateZ(-1023px);
 
     background-image:url("images/panorama/panorama_3.png");
 
@@ -80,7 +84,7 @@ html, body {
 
     transform:
     rotateY(180deg)
-    translateZ(-1024px);
+    translateZ(-1023px);
 
     background-image:url("images/panorama/panorama_2.png");
 
@@ -91,7 +95,7 @@ html, body {
 
     transform:
     rotateY(-90deg)
-    translateZ(-1024px);
+    translateZ(-1023px);
 
     background-image:url("images/panorama/panorama_1.png");
 
@@ -102,7 +106,7 @@ html, body {
 
     transform:
     rotateX(90deg)
-    translateZ(-1024px);
+    translateZ(-1023px);
 
     background-image:url("images/panorama/panorama_5.png");
 
@@ -113,7 +117,7 @@ html, body {
 
     transform:
     rotateX(-90deg)
-    translateZ(-1024px);
+    translateZ(-1023px);
 
     background-image:url("images/panorama/panorama_4.png");
 
