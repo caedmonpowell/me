@@ -2,9 +2,11 @@ const cube = document.getElementById("cube");
 
 let rotation = 0;
 
+
 function animate(){
 
     rotation += 0.01;
+
 
     cube.style.transform = `
 
@@ -16,8 +18,10 @@ function animate(){
 
     `;
 
+
     requestAnimationFrame(animate);
 
 }
+
 
 animate();
